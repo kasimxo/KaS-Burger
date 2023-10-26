@@ -1,0 +1,14 @@
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\bin\Debug\net6.0\ConsoleBurguer.exe
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\bin\Debug\net6.0\ConsoleBurguer.deps.json
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\bin\Debug\net6.0\ConsoleBurguer.runtimeconfig.json
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\bin\Debug\net6.0\ConsoleBurguer.dll
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\bin\Debug\net6.0\ConsoleBurguer.pdb
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\obj\Debug\net6.0\ConsoleBurguer.GeneratedMSBuildEditorConfig.editorconfig
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\obj\Debug\net6.0\ConsoleBurguer.AssemblyInfoInputs.cache
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\obj\Debug\net6.0\ConsoleBurguer.AssemblyInfo.cs
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\obj\Debug\net6.0\ConsoleBurguer.csproj.CoreCompileInputs.cache
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\obj\Debug\net6.0\ConsoleBurguer.dll
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\obj\Debug\net6.0\refint\ConsoleBurguer.dll
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\obj\Debug\net6.0\ConsoleBurguer.pdb
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\obj\Debug\net6.0\ConsoleBurguer.genruntimeconfig.cache
+D:\visual studio\burguer\ConsoleBurguer\ConsoleBurguer\obj\Debug\net6.0\ref\ConsoleBurguer.dll
