@@ -19,7 +19,7 @@ namespace Hamburger
         }
         public override double CalculatePrice()
         {
-            return unidades*price*(1+size/10);
+            return Math.Round(unidades*price*(1+size/10),2);
         }
 
         public override string GetName()
@@ -29,7 +29,7 @@ namespace Hamburger
 
         public override double GetPricePerUnit()
         {
-            return price * (1 + size / 10);
+            return Math.Round(price * (1 + size / 10),2);
         }
 
         public override int GetQuantity()

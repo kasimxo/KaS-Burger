@@ -28,7 +28,7 @@ internal class Program
     private static void Menu()
     {
         Console.Clear();
-        Console.WriteLine("Bienvenido a Los Pollos Hermanos!");
+        Console.WriteLine("Bienvenido a Los Pollos Hermanos!\n");
         Console.WriteLine("1. Ver pedido actual");
         Console.WriteLine("2. Añadir al pedido");
         Console.WriteLine("3. Salir");
@@ -61,6 +61,7 @@ internal class Program
     private static void MostrarPedido()
     {
         string s = string.Format("\n{0,-15}\t{1,-15}\t{2,-15}\t{3,-15}", "Item", "Cantidad", "Precio Ud (€)", "Precio (€)");
+        Console.Write("Fecha:\t{0}",pedido.getDate().ToString());
         Console.WriteLine(s);
         foreach (Item item in pedido.getItems())
         {
@@ -78,7 +79,8 @@ internal class Program
     private static void SeleccionItem()
     {
         Console.WriteLine("\n1. Comida");
-        Console.WriteLine("2. Bebida");
+        Console.WriteLine("2. Patatas");
+        Console.WriteLine("3. Bebida");
         var selection = Console.ReadLine();
         int nSel = 0;
         int.TryParse(selection, out nSel);
@@ -89,12 +91,47 @@ internal class Program
                 SeleccionComida();
                 break;
             case 2:
+                SeleccionPatatas();
+                break;
+            case 3:
                 SeleccionBebida();
                 break;
             default:
                 Error();
                 Menu();
                 break;
+        }
+    }
+
+    private static void SeleccionPatatas()
+    {
+        Console.WriteLine("Introduce la cantidad:");
+        var cantidadSel = Console.ReadLine();
+        int cantidadN = 0;
+        int.TryParse(cantidadSel, out cantidadN);
+
+        if (cantidadN > 0)
+        {
+            Console.WriteLine("Tamaño de patas:");
+            Console.WriteLine("1. Ración simple");
+            Console.WriteLine("2. Ración doble");
+            var selection = Console.ReadLine();
+            int nSel = 0;
+            int.TryParse(selection, out nSel);
+
+            switch (nSel)
+            {
+                case 1:
+                    pedido.addItem(new Patatas(cantidadN, nSel));
+                    break;
+                case 2:
+                    pedido.addItem(new Patatas(cantidadN, nSel));
+                    break;
+                default:
+                    Error();
+                    Menu();
+                    break;
+            }
         }
     }
 

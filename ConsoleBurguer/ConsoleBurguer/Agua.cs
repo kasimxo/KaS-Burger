@@ -16,7 +16,7 @@ namespace Hamburger
         }
         public override double CalculatePrice()
         {
-            return price*unidades;
+            return Math.Round(price*unidades,2);
         }
 
         public override string GetName()

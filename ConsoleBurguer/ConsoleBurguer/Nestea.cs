@@ -12,6 +12,7 @@ namespace ConsoleBurguer
         double price = 2.80;
         String name = "Nestea";
         int unidades;
+
         public Nestea(int num)
         {
             this.unidades = num;
@@ -25,7 +26,7 @@ namespace ConsoleBurguer
 
         public override double GetPricePerUnit()
         {
-            return price;
+            return Math.Round(price, 2);
         }
 
         public override int GetQuantity()

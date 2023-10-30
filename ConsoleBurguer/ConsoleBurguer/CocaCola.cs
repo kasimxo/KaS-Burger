@@ -23,7 +23,7 @@ namespace Hamburger
 
         public override double GetPricePerUnit()
         {
-            return price;
+            return Math.Round(price,2);
         }
 
         public override int GetQuantity()

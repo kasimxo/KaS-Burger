@@ -9,9 +9,11 @@ namespace Hamburger
     internal class Pedido
     {
         public List<Item> pedido;
+        public DateTime date;
 
         public Pedido(){
             pedido = new List<Item>();
+            date = DateTime.Now;
         }
 
         public void addItem(Item it)
@@ -31,6 +33,10 @@ namespace Hamburger
         public List<Item> getItems()
         {
             return pedido;
+        }
+        public DateTime getDate()
+        {
+            return date;
         }
     }
 }
