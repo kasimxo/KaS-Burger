@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hamburger
 {
-    public abstract class Refresco : Item
+    public abstract class Bebida : Item
     {
     }
 }

@@ -12,6 +12,12 @@ namespace Hamburger
         String name = "Hamburgesa";
         int unidades;
         double size;
+
+        int extraQueso;
+        int extraCebolla;
+        int extraBacon;
+        int extraPepinillo;
+
         public Burger(int cantidad, int selectedSize)
         {
             unidades = cantidad;

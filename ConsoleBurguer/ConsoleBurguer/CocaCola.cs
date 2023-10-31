@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hamburger
 {
-    internal class CocaCola : Refresco
+    internal class CocaCola : Bebida
     {
         double price = 2.30;
         String name = "Coca-Cola";

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleBurguer
 {
-    internal class Nestea : Refresco
+    internal class Nestea : Bebida
     {
         double price = 2.80;
         String name = "Nestea";
