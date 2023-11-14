@@ -9,9 +9,10 @@ internal class Program
 
     private static void Main(string[] args)
     {
+        //Aquí declaramos la codificación de texto de la consola
         Console.OutputEncoding = System.Text.Encoding.Unicode;
 
-
+        //Iniciamos el menu y el bucle de la aplicación
         while (true)
         {
             Menu();
@@ -19,9 +20,10 @@ internal class Program
 
     }
 
-    /*
-     * Este es el método que imprimer el menú principal
-     */
+    /// <sumary>
+    /// Este método muestra el menu principal, también funciona como la pantalla de inicio de la aplicación.
+    /// Incluye Console.Clear() al principio para limpiar la pantalla cada vez que se vuelve a este menu
+    /// </sumary>
     private static void Menu()
     {
         Console.Clear();
@@ -55,10 +57,10 @@ internal class Program
         }
     }
 
-    /*
-     * Este metodo imprime la lista de items pedidos, asi como su precio
-     * Tambien calcula y muestra el total del pedido
-     */
+    /// <sumary>
+    /// Este método imprime por pantalla el pedido acumulado
+    /// Utiliza el método propio de cada item para mostrarlo por pantalla
+    /// </sumary>
     private static void MostrarPedido()
     {
         string s = string.Format("\n{0,-15}\t{1,-15}\t{2,-15}\t{3,-15}", "Item", "Cantidad", "Precio Ud (€)", "Precio (€)");
@@ -73,10 +75,10 @@ internal class Program
         Console.ReadLine();
     }
 
-    /*
-     * Permite al usuario seleccionar el tipo de item a pedir
-     * [Comida, Patatas, Bebida]
-     */
+    /// <sumary>
+    /// Este método permite al usuario seleccionar que item quiere añadir al pedido
+    /// Si no seleccionar una opción válida, no hace nada
+    /// </sumary>
     private static void SeleccionItem()
     {
         Console.WriteLine("\n1. Hamburguesa");
@@ -102,6 +104,10 @@ internal class Program
         }
     }
 
+    /// <sumary>
+    /// Este método permite al usuario seleccionar el tamaño de las patatas que quiere
+    /// Si la opción no es válida, vuelve al menú principal
+    /// </sumary>
     private static void SeleccionPatatas()
     {
         int cantidadN = solicitarCantidad();
@@ -130,6 +136,9 @@ internal class Program
         }
     }
 
+    /// <sumary>
+    /// Este método permite al usuario seleccionar el tamaño de la hamburguesa que quiere y si quiere extras
+    /// </sumary>
     private static void SeleccionHamburguesa()
     {
         int cantidadN = solicitarCantidad();
@@ -145,8 +154,8 @@ internal class Program
 
             nSel = solicitarOpcion(1,3);
 
+            //Aquí se le piden al usuario los extras, puede pedir tantos como quiera.
             int extra = solicitarExtras();
-
             while(extra>0)
             {
                 extras[extra-1]++;
@@ -173,10 +182,11 @@ internal class Program
             }
         }
     }
-
-    /*
-     * Este método le pide al usuario que seleccione extras
-     */
+    
+    /// <sumary>
+    /// Este método permite al usuario pedir extras para su hamburguesa
+    /// </sumary>
+    /// <returns>Devuelve un valor entero que representa el extra pedido. 0 es el valor por defecto que no representa ningún extra</returns>
     private static int solicitarExtras()
     {
         int extra = 0;
@@ -194,6 +204,9 @@ internal class Program
         return extra;
     }
 
+    /// <sumary>
+    /// Este método muestra al usuario la opciones de bebida y le permite hacer una selección
+    /// </sumary>
     private static void SeleccionBebida()
     {
         Console.WriteLine("\n1. Agua");
@@ -221,9 +234,9 @@ internal class Program
         }
     }
 
-    /*
-     * Este método muestra un mensaje de error en la pantalla y pide presionar una tecla para continuar
-     */
+    /// <sumary>
+    /// Este método se utiliza para hacer una pausa y mostrar un mensaje de error en la pantalla
+    /// </sumary>
     private static void Error()
     {
         Console.WriteLine("Selección no reconocida");
@@ -231,11 +244,12 @@ internal class Program
         Console.ReadLine();
     }
 
-    /*
-     * Este método le pide al usuario una cantidad por pantalla y la devuelve como entero
-     * También comprueba que la cantidad no sea <= 0
-     * Si la cantidad es <= 0, o no se puede parsear, devuelve -1 como error
-     */
+    /// <sumary>
+    /// Este método le pide al usuario una cantidad por pantalla y la devuelve como entero
+    /// También comprueba que la cantidad no sea <= 0
+    /// Si la cantidad es <= 0, o no se puede parsear, devuelve -1 como error
+    /// </sumary>
+    /// <returns> </returns>
     private static int solicitarCantidad()
     {
         Console.WriteLine("Introduce la cantidad:");
@@ -253,12 +267,14 @@ internal class Program
         }
     }
 
-    /*
-     * Este método le pide al usuario que seleccione una opción entre un mínimo y un máximo
-     * Devuelve el valor seleccionado como un entero
-     * Si la opción introducida no se puede parsear, o si no es una opción válida, 
-     * imprimer un mensaje de error y devuelve -1
-     */
+
+    /// <sumary>
+    /// Este método le pide al usuario que seleccione una opción entre un mínimo y un máximo
+    /// Devuelve el valor seleccionado como un entero
+    /// Si la opción introducida no se puede parsear, o si no es una opción válida, 
+    /// imprimer un mensaje de error y devuelve -1
+    /// </sumary>
+    /// <returns>El valor seleccionado como un entero</returns>
     private static int solicitarOpcion(int min, int max)
     {
         var selection = Console.ReadLine();
@@ -273,9 +289,9 @@ internal class Program
         }
     }
 
-    /*
-     * Imprime en pantalla todas las opciones de comida y bebida 
-     */
+    /// <sumary>
+    /// Imprime en la pantalla todas las opciones de comida, bebia y patatas
+    /// </sumary>
     private static void verMenu()
     {
         Console.Clear();
