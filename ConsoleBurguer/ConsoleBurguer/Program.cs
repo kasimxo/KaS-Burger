@@ -116,7 +116,6 @@ internal class Program {
                     break;
                 default:
                     Error();
-                    Menu();
                     break;
             }
         }
@@ -159,7 +158,6 @@ internal class Program {
                     break;
                 default:
                     Error();
-                    Menu();
                     break;
             }
         }
@@ -207,7 +205,6 @@ internal class Program {
                 break;
             default:
                 Error();
-                Menu();
                 break;
         }
     }
@@ -270,8 +267,11 @@ internal class Program {
         Console.WriteLine("\nIngredientes:\n\t- 200gr Vacuno\n\t- Cebolla caramelizada\n\t- Tomate\n\t- Queso");
         Console.WriteLine("Extras (conllevan un coste adicional de 1 €):");
         Console.WriteLine("\t- Queso\n\t- Cebolla\n\t- Bacon\n\t- Pepinillo");
-        Console.WriteLine("\n\tPatatas\nRación simple:\t5.25 €\nRación doble: 7.88 €\t");
-        Console.WriteLine("\n\tBebidas:");
+        Console.WriteLine("\n\tPatatas\n\n\tRación simple:\t5.25 €\n\tRación doble: 7.88 €\t");
+        Console.WriteLine("\n\tBebidas:\n");
+        Console.WriteLine("\tAgua: 1.80 €\t");
+        Console.WriteLine("\tCocaCola: 2.30 €\t");
+        Console.WriteLine("\tNestea: 2.80 €\t");
 
         Console.WriteLine("\nPresiona una tecla para continuar...");
         Console.ReadLine();
