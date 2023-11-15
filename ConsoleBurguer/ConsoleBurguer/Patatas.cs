@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleBurguer {
     internal class Patatas : Item {
-        double price = 5.25;
-        String name = "Patatas";
-        int unidades;
-        double size;
+        private double price = 5.25;
+        private String name = "Patatas";
+        private int unidades;
+        private double size;
 
         /**
          * Constructor de las patatas.

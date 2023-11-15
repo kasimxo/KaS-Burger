@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleBurguer {
     internal class Nestea : Bebida {
-        double price = 2.80;
-        String name = "Nestea";
-        int unidades;
+        private double price = 2.80;
+        private String name = "Nestea";
+        private int unidades;
 
         public Nestea(int num) {
             this.unidades = num;

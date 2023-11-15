@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Hamburger {
     internal class CocaCola : Bebida {
-        double price = 2.30;
-        String name = "Coca-Cola";
-        int unidades;
+        private double price = 2.30;
+        private String name = "Coca-Cola";
+        private int unidades;
+
         public CocaCola(int num) { 
             this.unidades = num;
 

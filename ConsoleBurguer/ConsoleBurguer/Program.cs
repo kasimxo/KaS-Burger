@@ -59,6 +59,7 @@ internal class Program {
         string s = string.Format("\n{0,-15}\t{1,-15}\t{2,-15}\t{3,-15}", "Item", "Cantidad", "Precio Ud (€)", "Precio (€)");
         Console.Write("Fecha:\t{0}",pedido.getDate().ToString());
         Console.WriteLine(s);
+        //Se van imprimiendo los items del pedido con el método propio de cada uno
         foreach (Item item in pedido.getItems()) {
             Console.WriteLine(item.ToString());
         }
@@ -141,7 +142,6 @@ internal class Program {
             int extra = solicitarExtras();
             while(extra>0) {
                 extras[extra-1]++;
-                Console.WriteLine(extras[0] + " " + extras[1] + " " + extras[2] + " " + extras[3]);
                 extra = solicitarExtras();
             }
             

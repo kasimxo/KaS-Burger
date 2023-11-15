@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hamburger
-{
-    internal class Pedido
-    {
+namespace Hamburger {
+    internal class Pedido {
         //Esta es la lista de todos los objetos pedidos
         public List<Item> pedido;
         //Este DateTime se usa para añadir una fecha y hora al pedido

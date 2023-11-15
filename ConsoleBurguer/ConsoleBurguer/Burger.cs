@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hamburger
-{
-    internal class Burger : Item
-    {
-        double price = 10.50;
-        String name = "Hamburgesa";
-        int unidades;
-        double size;
+namespace Hamburger {
+    internal class Burger : Item {
+        private double price = 10.50;
+        private String name = "Hamburgesa";
+        private int unidades;
+        private double size;
 
         int extraQueso;
         int extraCebolla;
