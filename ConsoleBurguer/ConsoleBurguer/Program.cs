@@ -98,7 +98,6 @@ internal class Program
                 break;
             default:
                 Error();
-                Menu();
                 break;
         }
     }
