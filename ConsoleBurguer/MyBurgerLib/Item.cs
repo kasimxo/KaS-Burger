@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hamburger {
-    // Clase abstracta que sirve para reunir todos los elementos que se pueden pedir y establecer sus métodos básicos
-    public abstract class Item {
+namespace Hamburger
+{
+    public abstract class Item
+    {
         /// <summary>
         /// Este método devuelve el precio por unidad, redondeado para tener solo dos decimales
         /// </summary>

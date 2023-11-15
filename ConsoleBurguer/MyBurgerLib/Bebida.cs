@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hamburger {
-    public abstract class Bebida : Item {
+namespace Hamburger
+{
+    public abstract class Bebida : Item
+    {
     }
 }
