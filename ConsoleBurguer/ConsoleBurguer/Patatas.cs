@@ -25,6 +25,7 @@ namespace ConsoleBurguer {
             }
             size = 0.5 + racion / 2;
             unidades = cantidad;
+
         }
 
         public override double CalculatePrice() {

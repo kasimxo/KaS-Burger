@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBurguer", "ConsoleBurguer\ConsoleBurguer.csproj", "{2530DB61-31D6-4014-B599-1124A4740145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleBurguer", "ConsoleBurguer\ConsoleBurguer.csproj", "{2530DB61-31D6-4014-B599-1124A4740145}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libreria", "libreria", "{1EDF86D4-B3EB-4F0D-A88C-3CF932ED05E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
